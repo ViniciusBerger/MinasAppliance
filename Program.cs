@@ -76,7 +76,6 @@ namespace assignment1
                     case '5':
                         string soundRating = field[7];
                         string feature = field[6];
-
                         appliances.Add(new Dishwasher(itemNumber, brand, quantity, wattage, color, price, feature, soundRating));
                         break;
 
@@ -91,15 +90,15 @@ namespace assignment1
         static public void displayMenu()
         {
             Console.WriteLine();
-            Console.WriteLine("   Welcome to Modern Appliances!    ");
-            Console.WriteLine("      How may we assist you?        ");
-            Console.WriteLine("----------------------------------- ");
+            Console.WriteLine("***** WELCOME TO MINAS APPLIANCES *****");           
+            Console.WriteLine("      How may we assist you?           ");
+            Console.WriteLine("-------------------------------------- ");
             Console.WriteLine();
-            Console.WriteLine("     1-Check out appliances         ");
-            Console.WriteLine("     2-Find appliances by brand     ");
-            Console.WriteLine("     3-Display Appliances by type   ");
-            Console.WriteLine("     4-Produce random Appliance list");
-            Console.WriteLine("     5-Save and Exit                ");
+            Console.WriteLine("     1-Check out appliances            ");
+            Console.WriteLine("     2-Find appliances by brand        ");
+            Console.WriteLine("     3-Display Appliances by type      ");
+            Console.WriteLine("     4-Produce random Appliance list   ");
+            Console.WriteLine("     5-Save and Exit                   ");
 
             //Get the answer value from the user and coverts it to a char datatype 
             string stringOption = Console.ReadLine();
